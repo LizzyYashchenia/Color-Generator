@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Color Generator</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="content result">
+        <h1 class="title">Color Generate</h1>
+        <button class="generate-btn" id="generateColorBtn">Generate</button>
+        <div class="color-info hidden"></div>
+        <div class="colors-settings hidden">
+          <div class="colors-settings__color-type">
+            <label for="HSV" class="colors-settings__type">HSV</label>
+            <input
+              id="HSV"
+              type="text"
+              class="colors-settings__color"
+              value="sss"
+              onfocus="this.select(); "
+              readonly
+            />
+          </div>
+          <div class="colors-settings__color-type">
+            <label for="HEX" class="colors-settings__type">HEX</label>
+            <input
+              id="HEX"
+              type="text"
+              class="colors-settings__color"
+              onfocus="this.select(); "
+              readonly
+            />
+          </div>
+          <div class="colors-settings__color-type">
+            <label for="CMYK" class="colors-settings__type">CMYK</label>
+            <input
+              id="CMYK"
+              type="text"
+              class="colors-settings__color"
+              onfocus="this.select(); "
+              readonly
+            />
+          </div>
+          <div class="colors-settings__color-type">
+            <label for="RGBA" class="colors-settings__type">RGBA</label>
+            <input
+              id="RGBA"
+              type="text"
+              class="colors-settings__color"
+              onfocus="this.select(); "
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
